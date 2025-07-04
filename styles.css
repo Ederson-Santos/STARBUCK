@@ -1,0 +1,115 @@
+/* CSS - cascading Style Sheet ou Folha de Estilo em cascata
+seletor - que se quero alterar/ estilizar, mudar o estilo (h1, p)
+propriedade - o que será alterado / modificado, exemplo: color de testo, Parágrafo (p)
+Valor - refere ao valor que desejamos colocar em um propriedade
+*/
+
+* {    /* asteríco (*) - siginifica tudo, ou seja, tudo que estiver *{ aqui dentro, vai der a mesma formatação} */
+    margin: 0;     /* modifica o espaçamento da margem para 0. */
+    padding: 0;    /* modifica o espaçamento entre conteudos para0. */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* define Poppins como fonte padrão, <sans-serif> - caso a fonte escolhida não esteja disponível, essa função escolhe outro do mesmo padrão */
+}
+
+body {
+    padding-top: 20px;      /* adiciona espaçamento de 20 px, acima do trecho / imagem*/
+    padding-right: 20px;    /* adiciona espaçamento de 100 px do lado direito do trecho / imagem*/
+    padding-left: 100px;    /* adiciona espaçamento de 100 px do lado esquerdo do trecho / imagem*/
+    padding-bottom: 100;    /* adiciona espaçamento de 100 px, abaixo do trecho / imagem*/
+}
+
+.conteudo {    /* representação classe <.conteudo>, cria uma estrutura de estilização para essa classe**/
+    width: 100%;                              /* largura e nesse caso vai ocupar o espaço todo, ou seja, 100% do espaço disponível*/
+    display: flex;                            /* transforma um elemento em um container flexível/ organizando de forma eficiente os elementos*/
+    align-items: center;                      /* alinha  os itens ao longo do eixo geralmente, no vertical nesse caso cetraliza os elementos*/
+    justify-content: space-between;           /* adiciona espaço entre os conteudos */
+}
+
+.caixa-texto {      /* representação classe <.caixa-texto>, cria uma estrutura de estilização para essa classe*/
+    width: 600px;   /* largura e nesse caso vai ocupar o espaço de 600 px que é um espaço flexível*/
+}
+tr
+h1 {       /*cria uma estrutura de estilização para essa classe*/
+    color: #333333;      /*uma cor pode ser representada por código hexadecimal (este é), cógido rgb ou pelo nome da cor */
+    font-size: 60px;       /*tamanho da fonte, nesse caso de 60 px que é uma valor fixo*/
+    font-weight: bold;     /* grossura da fonte*/
+}
+
+p {  /* cria uma estrutura de estilização para um parágrafo(p) */
+    font-size: 16px;             /* tamanho da fonte, nesse caso de 60 px que é uma valor fixo*/
+    text-align: justify;         /* alinhaento de texto, nesse jutificado*/
+    text-justify: inter-word;    /* justificação do texto será feita ajustando o espaçamento entre palavras*/
+}
+
+span {    /* span - aplicar estilos ou manipulações específicas a partes de um texto, sem alterar a estrutura do layout.*/
+    color: #017143;            /*muda a cor */
+    font-size: 70px;             /*muda a cor */
+    font-weight: 900;            /*muda a cor */
+}
+
+button {     /* condigura o botão*/
+    background: #017143;
+    /* cor de fundo do botão, no caso verde */
+    color: #ffffff;
+    /* cor da letra do trecho escrito dentro do botão */
+    border-radius: 40px;
+    /*arredondamento das bordas do botão*/
+    border: nome;
+    /* esse comando tira a borda, ou seja, fica sem as lingas da borda*/
+    padding: 10px;
+    /* esse comando aumenta o espaçameto interno entre os elementos e suas bordas */
+    margin-top: 10px;
+    /* adiciona um espacço de 10 pc acima do texto dentro do botão*/
+    cursor: pointer;
+    /* muda o ponteiro do mouse*/
+    transition: 0.5s;
+    /* adiciona um tempo de transição entre as cores de 0.5s*/
+}
+
+button:hover {             
+    /* muda uma configurado do botão quando o mouse esta sobre ele*/
+    color: #119231;     /* muda a cor do botão*/
+    background: #011318;
+    /* muda o plano de fundo do botão*/
+}
+
+.caixa-imagem {
+    width: 600px;
+    /* lagurda da imagem 600px*/
+    display: flex;
+    /* disposição da imagem flexível*/
+    justify-content: flex-end;
+    /* alinhamento do conteudo (imagem) flex´vel no final*/
+    margin-top: 250px;
+    /* adiciona um espaco de 250px acima da figura*/
+}
+
+.starbucks {          /* (ponto).starbucks - indica a representação uma classe*/
+    width: 300px;     /* width - representa o tamanho, nesse caso tamanho do copo*/
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-menu:hover{
+    transform: translateY(-30px); /* faz uma rotação em torno do eixo y (vertical)*/
+}
+
+.circulo { /* cria uma estrutura de estilização para a classe<.circulo>*/
+    width: 100%;            /* altera o tamanho do <div círculo> */
+    height: 100%;           /* altera a <altura do div> */
+    background: #017143;  /* cor do plano de fundo*/
+    position: absolute;     /* permite posicionar um elemento de forma precisa dentro do seu contêiner pai*/
+    top:0;                  /* posiciona o elemento no topo do conteiner pai*/
+    left: 0;                /* alinha o elemento a esquerda*/
+    clip-path: circle(500px at right 800px); /* recorta o elemento em forma de círculo com 500px de raio e 800 px a partir da broda direita */
+    z-index: -1;            /*coloca um elemento atrás de outro elemento na pilha de camadas*/
+}

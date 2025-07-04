@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Declaração do tipo de documento HTML5 -->
+    <head> <!-- Cabeçalho do documento HTML -->
+        <meta charset="UTF-8">      <!-- Define a codificação de caracteres para UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Define a viewport para dispositivos móveis -->
+        <!--meta: é uma tag que fornece metadados sobre o documento HTML, como a codificação de caracteres e a viewport para dispositivos móveis-->
+        <!--name: é um atributo usado para especificar o nome do metadado, como "viewport" para definir a área visível da página em dispositivos móveis-->
+        <!--viewport: é uma tag que define a área visível da página em dispositivos móveis, permitindo que o conteúdo se ajuste corretamente em diferentes tamanhos de tela-->
+        <link rel="stylesheet" href="styles.css">       <!-- linkar HTML com Css, onde o Css vai atuar dentro do HTML-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">  
+
+        <title> Starbucks </title>  <!-- Título da página que será exibido na aba do navegador -->
+            <!--Starbucks: é o título da página é importante para SEO e para a identificação da página pelo usuário -->
+            <!--<div>: cria/abre uma caixa invisível usada para agrupar outros elementos e organizar o layout da página.-->
+            <!--SEO: (Search Engine Optimization ou Otimização para Motores de Busca) é um conjunto de estratégias e técnicas usadas para melhorar a visibilidade de um site nos mecanismos de busca, como Google, Bing e Yahoo.
+            O objetivo do SEO é aumentar o tráfego orgânico, ou seja, visitantes que chegam ao site sem a necessidade de anúncios pagos.-->
+    </head> <!-- Fim do cabeçalho do documento HTML -->
+
+    <body>         <!-- Corpo do documento HTML, onde o conteúdo visível da página é colocado -->
+        <div = class="circulo"></div>
+
+        <img src="img/logo.png" alt="imagem-logo-starbucks"> 
+         <!-- A tag de imagem é usada para inserir uma imagem na página HTML -->
+            <!-- img: é a tag de imagem, ela serve para exibir imagens na página -->
+            <!-- src: Source que que dizer origem, é o caminho da imagem, pode ser um link ou um caminho local -->
+            <!-- alt: Alternative, é o texto alternativo que será exibido caso a imagem não carregue, é importante para acessibilidade -->
+
+        <div class= "conteudo">                 <!-- div - cria uma caixa invisível usada para agrupar outros elementos e organizar o layout da página, nesse caso <classe conteudo>.-->
+            <div class="caixa-texto">           <!-- cria uma caixa de  <classe caixa-texto>.-->.
+                <h1> It's not just Coffee It's <span>Starbucks</span> </h1>    <!-- Cabeçalho de nível 1, usado para títulos principais na página -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sint vero fuga, cupiditate beatae incidunt officiis
+                    aliquam nulla. Ullam laudantium, eius saepe ex fuga consectetur ipsam quod inventore libero dolorem asperiores! </p>  <!-- </p> Parágrafo de texto, usado para descrever o conteúdo da página -->
+                <button> Clique no SININHO </button>     <!-- Botão que pode ser usado para interações, como clicar para realizar uma ação -->
+            </div>      <!-- fecha a caixa-texto -->
+
+            <div class= "caixa-imagem">  <!-- cria uma caixa da classe imagem-->
+                <img class="starbucks" src="img/img1.png" alt="imagem-copo-starbucks">  <!-- adiciona imagem, desta vez com um caminho diferente e um texto alternativo específico -->
+            </div>  <!-- / div - fecha a caixa-imagem -->
+
+        </div>  <!-- fecha a caixa conteúdo-->
+
+        <div class="caixa-menu">      <!-- cria uma caixa interna de classe caixa menu-->
+            <img onclick="trocaCor('#d752b1'); trocaImagem('img/img3.png')" class=" botao-menu " src="img/thumb3.png" alt="imagem-copinho-starbucks">
+                <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#d752b1') muda  fundo do círculo para ('#d752b1') e trocaImagem('img/img3.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img3.png>-->
+                
+            <img onclick="trocaCor('#eb7495'); trocaImagem('img/img2.png')" class=" botao-menu " src="img/thumb2.png" alt="imagem-copinho-starbucks">
+                <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#eb7495') muda  fundo do círculo para ('#eb7495') e trocaImagem('img/img2.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img2.png> -->
+                
+            <img onclick="trocaCor('#017143'); trocaImagem('img/img1.png')" class=" botao-menu " src="img/thumb1.png" alt="imagem-copinho-starbucks">
+                <!-- *cria uma imagem clicável na página, onde o comando onclick="trocaCor('#017143') muda  fundo do círculo para ('#017143') e trocaImagem('img/img1.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img1.png> -->
+        </div>  <!-- fecha caixa da classe caixa menu-->
+    </body> <!-- Fim do corpo do documento HTML -->
+    <script src="scripts.js"> </script> <!-- linkar Javascript com HTML-->
+</html>
