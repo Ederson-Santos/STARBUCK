@@ -23,34 +23,34 @@
     <body>         <!-- Corpo do documento HTML, onde o conteúdo visível da página é colocado -->
         <div = class="circulo"></div>
 
-        <img src="img/logo.png" alt="imagem-logo-starbucks"> 
-         <!-- A tag de imagem é usada para inserir uma imagem na página HTML -->
-            <!-- img: é a tag de imagem, ela serve para exibir imagens na página -->
-            <!-- src: Source que que dizer origem, é o caminho da imagem, pode ser um link ou um caminho local -->
-            <!-- alt: Alternative, é o texto alternativo que será exibido caso a imagem não carregue, é importante para acessibilidade -->
+            <img src="img/logo.png" alt="imagem-logo-starbucks"> 
+            <!-- A tag de imagem é usada para inserir uma imagem na página HTML -->
+                <!-- img: é a tag de imagem, ela serve para exibir imagens na página -->
+                <!-- src: Source que que dizer origem, é o caminho da imagem, pode ser um link ou um caminho local -->
+                <!-- alt: Alternative, é o texto alternativo que será exibido caso a imagem não carregue, é importante para acessibilidade -->
 
-        <div class= "conteudo">                 <!-- div - cria uma caixa invisível usada para agrupar outros elementos e organizar o layout da página, nesse caso <classe conteudo>.-->
-            <div class="caixa-texto">           <!-- cria uma caixa de  <classe caixa-texto>.-->.
-                <h1> It's not just Coffee It's <span>Starbucks</span> </h1>    <!-- Cabeçalho de nível 1, usado para títulos principais na página -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sint vero fuga, cupiditate beatae incidunt officiis
-                    aliquam nulla. Ullam laudantium, eius saepe ex fuga consectetur ipsam quod inventore libero dolorem asperiores! </p>  <!-- </p> Parágrafo de texto, usado para descrever o conteúdo da página -->
-                <button> Clique no SININHO </button>     <!-- Botão que pode ser usado para interações, como clicar para realizar uma ação -->
-            </div>      <!-- fecha a caixa-texto -->
+            <div class= "conteudo">                 <!-- div - cria uma caixa invisível usada para agrupar outros elementos e organizar o layout da página, nesse caso <classe conteudo>.-->
+                <div class="caixa-texto">           <!-- cria uma caixa de  <classe caixa-texto>.-->.
+                    <h1> It's not just Coffee It's <span>Starbucks</span> </h1>    <!-- Cabeçalho de nível 1, usado para títulos principais na página -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sint vero fuga, cupiditate beatae incidunt officiis
+                        aliquam nulla. Ullam laudantium, eius saepe ex fuga consectetur ipsam quod inventore libero dolorem asperiores! </p>  <!-- </p> Parágrafo de texto, usado para descrever o conteúdo da página -->
+                    <button> Clique no SININHO </button>     <!-- Botão que pode ser usado para interações, como clicar para realizar uma ação -->
+                </div>      <!-- fecha a caixa-texto -->
 
-            <div class= "caixa-imagem">  <!-- cria uma caixa da classe imagem-->
-                <img class="starbucks" src="img/img1.png" alt="imagem-copo-starbucks">  <!-- adiciona imagem, desta vez com um caminho diferente e um texto alternativo específico -->
-            </div>  <!-- / div - fecha a caixa-imagem -->
+                <div class= "caixa-imagem">  <!-- cria uma caixa da classe imagem-->
+                    <img class="starbucks" src="img/img1.png" alt="imagem-copo-starbucks">  <!-- adiciona imagem, desta vez com um caminho diferente e um texto alternativo específico -->
+                </div>  <!-- / div - fecha a caixa-imagem -->
 
-        </div>  <!-- fecha a caixa conteúdo-->
+            </div>  <!-- fecha a caixa conteúdo-->
 
-        <div class="caixa-menu">      <!-- cria uma caixa interna de classe caixa menu-->
-            <img onclick="trocaCor('#d752b1'); trocaImagem('img/img3.png')" class=" botao-menu " src="img/thumb3.png" alt="imagem-copinho-starbucks">
-                <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#d752b1') muda  fundo do círculo para ('#d752b1') e trocaImagem('img/img3.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img3.png>-->
-                
-            <img onclick="trocaCor('#eb7495'); trocaImagem('img/img2.png')" class=" botao-menu " src="img/thumb2.png" alt="imagem-copinho-starbucks">
-                <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#eb7495') muda  fundo do círculo para ('#eb7495') e trocaImagem('img/img2.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img2.png> -->
-                
-            <img onclick="trocaCor('#017143'); trocaImagem('img/img1.png')" class=" botao-menu " src="img/thumb1.png" alt="imagem-copinho-starbucks">
+            <div class="caixa-menu">      <!-- cria uma caixa interna de classe caixa menu-->
+                <img onclick="trocaCor('#d752b1'); trocaImagem('img/img3.png')" class=" botao-menu " src="img/thumb3.png" alt="imagem-copinho-starbucks">
+                    <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#d752b1') muda  fundo do círculo para ('#d752b1') e trocaImagem('img/img3.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img3.png>-->
+                    
+                <img onclick="trocaCor('#eb7495'); trocaImagem('img/img2.png')" class=" botao-menu " src="img/thumb2.png" alt="imagem-copinho-starbucks">
+                    <!--*cria uma imagem clicável na página, onde o comando onclick="trocaCor('#eb7495') muda  fundo do círculo para ('#eb7495') e trocaImagem('img/img2.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img2.png> -->
+                    
+                <img onclick="trocaCor('#017143'); trocaImagem('img/img1.png')" class=" botao-menu " src="img/thumb1.png" alt="imagem-copinho-starbucks">
                 <!-- *cria uma imagem clicável na página, onde o comando onclick="trocaCor('#017143') muda  fundo do círculo para ('#017143') e trocaImagem('img/img1.png')" personaliza e define o que acontece ao clicar nessa imagem, trocando a imagem principal exibida dentro do círculo para essa nova <img1.png> -->
         </div>  <!-- fecha caixa da classe caixa menu-->
     </body> <!-- Fim do corpo do documento HTML -->

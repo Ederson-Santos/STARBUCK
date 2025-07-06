@@ -15,7 +15,7 @@ body {
     padding-top: 20px;      /* adiciona espaçamento de 20 px, acima do trecho / imagem*/
     padding-right: 20px;    /* adiciona espaçamento de 100 px do lado direito do trecho / imagem*/
     padding-left: 100px;    /* adiciona espaçamento de 100 px do lado esquerdo do trecho / imagem*/
-    padding-bottom: 100;    /* adiciona espaçamento de 100 px, abaixo do trecho / imagem*/
+    padding-bottom: 100px;    /* adiciona espaçamento de 100 px, abaixo do trecho / imagem*/
 }
 
 .conteudo {    /* representação classe <.conteudo>, cria uma estrutura de estilização para essa classe**/
